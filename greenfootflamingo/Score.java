@@ -16,11 +16,11 @@ public class Score extends Actor
      */
     public static int score=0;
     public Score(){
-        //setImage(new GreenfootImage("" , 24, Color.GREEN, Color.BLACK));
+        //setImage(new GreenfootImage("" , 44, Color.RED, new Color(0,0,0,100)));
     }
     public void act() 
     {
-        setImage(new GreenfootImage("Score : " + Score.score, 24, Color.PINK, new Color(0,0,0,10)));
+        setImage(new GreenfootImage("Score : " + Score.score, 44, Color.PINK, new Color(0,0,0,0)));
     }    
    
 }

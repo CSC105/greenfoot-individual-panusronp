@@ -14,6 +14,11 @@ public class gameover extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        //flamingo flamingo=new flamingo();
+       //if(Score.score<=-30){
+           //getWorld().removeObject(flamingo);
+           //GreenfootImage gameover = new GreenfootImage("gameover");
+           //setImage(gameover);
     }    
 }
+

@@ -93,6 +93,7 @@ public class flamingo extends Actor
         checkKey();
         animationCounter++;
         chekHit();
+        iftouch();
     }
     public void checkKey()
     {
@@ -426,10 +427,10 @@ public void moveRight()
         //Actor bomb=getOneObjectAtOffset(0,0,bomb.class);
         if(isTouching(apple.class) == true){
             removeTouching(apple.class);
-            Score.score++;
+            Score.score+=2;
         }else if(isTouching(carrot.class)==true){
             removeTouching(carrot.class);
-            Score.score+=2;
+            Score.score+=10;
         }else if(isTouching(beetroot.class)==true){
             removeTouching(beetroot.class);
             Score.score+=4;
@@ -441,11 +442,21 @@ public void moveRight()
         if(bomb!=null){
             getWorld().removeObject(bomb);
             GreenfootImage boom = new GreenfootImage("boom.png");
-            Score.score=Score.score-20;
+            Score.score=Score.score-10;
             getImage();
             
         }
         }
+        public void iftouch(){
+            if(isTouching(bomb.class)){
+            World MyWorld=getWorld();
+            gameover gameover=new gameover();
+            Score score=new Score();
+            MyWorld.addObject(score,600,413);
+            MyWorld.addObject(gameover,600,300);
+            MyWorld.removeObject(this);
+        }
     }
+}
 
 

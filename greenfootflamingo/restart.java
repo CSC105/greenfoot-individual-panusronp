@@ -17,6 +17,7 @@ public class restart extends Actor
         if(Greenfoot.mouseClicked(this))
     {
         Greenfoot.setWorld(new MyWorld());
+        Score.score=0;
     }
     }    
 }

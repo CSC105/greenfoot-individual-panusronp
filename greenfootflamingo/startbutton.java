@@ -8,15 +8,20 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class startbutton extends Actor
 {
+    GreenfootSound startsong; 
     /**
      * Act - do whatever the startbutton wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public void act(){
-    if(Greenfoot.mouseClicked(this))
-    {
-        Greenfoot.setWorld(new MyWorld());
+    public startbutton () {
+        startsong = new GreenfootSound("sounds/startsong.mp3");
+        startsong.playLoop();
     }
-    
-}  
+    public void act(){
+        if(Greenfoot.mouseClicked(this))
+        {
+            startsong.stop();
+            Greenfoot.setWorld(new MyWorld());
+        }
+    }  
 }

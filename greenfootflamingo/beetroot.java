@@ -14,9 +14,9 @@ public class beetroot extends Actor
      */
     int count=0;
     public beetroot(){
-    GreenfootImage beetroot=new GreenfootImage("beetroot.png");
+        GreenfootImage beetroot=new GreenfootImage("beetroot.png");
     setImage(beetroot);
-}
+    }
     public void act() 
     {
         if(getY()<=605){

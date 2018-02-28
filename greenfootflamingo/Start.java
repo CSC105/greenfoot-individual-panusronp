@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Start extends World
 {
+    GreenfootSound startsong; 
     /**
      * Constructor for objects of class start.
      * 
@@ -21,7 +22,19 @@ public class Start extends World
         addObject(startbutton,605,155);
         addObject(htpbutton,743,440);
         
-        Greenfoot.playSound("sounds/startsong.mp3");
+        //startsong = new GreenfootSound("sounds/startsong.mp3");
+        //Greenfoot.playSound("sounds/startsong.mp3");
+        Greenfoot.start();
     }
     
+
+@Override
+public void act(){
+    //startsong.playLoop();
 }
+@Override
+public void stopped(){
+    //tartsong.stop();
+}
+}
+
