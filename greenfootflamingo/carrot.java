@@ -26,8 +26,9 @@ public class carrot extends Actor
             getWorld().removeObject(this);
             //this.setImage(carrot);
         }
-        //if(count==15){
-         //   getWorld().removeObject(this);
-         //   count=0;
+        if(count==15){
+            getWorld().removeObject(this);
+            count=0;
     }  
     }    
+}

@@ -30,19 +30,19 @@ public MyWorld()
     }
 
     public void act(){
-        if(Greenfoot.getRandomNumber(70)<3){
+        if(Greenfoot.getRandomNumber(70)<1){
             apple apple=new apple();
             addObject(apple,Greenfoot.getRandomNumber(getWidth()),0);
-        }else if(Greenfoot.getRandomNumber(100)<3){
+        }else if(Greenfoot.getRandomNumber(100)<1){
             bomb bomb=new bomb();
             addObject(bomb,Greenfoot.getRandomNumber(getWidth()),0);
-        }else if(Greenfoot.getRandomNumber(130)<3){
+        }else if(Greenfoot.getRandomNumber(130)<1){
             carrot carrot=new carrot();
             addObject(carrot,Greenfoot.getRandomNumber(getWidth()),0);
-        }else if(Greenfoot.getRandomNumber(120)<3){
+        }else if(Greenfoot.getRandomNumber(120)<1){
             beetroot beetroot=new beetroot();
             addObject(beetroot,Greenfoot.getRandomNumber(getWidth()),0);
-        }else if(Greenfoot.getRandomNumber(110)<3){
+        }else if(Greenfoot.getRandomNumber(110)<1){
             shrimp shrimp=new shrimp();
             addObject(shrimp,Greenfoot.getRandomNumber(getWidth()),0);
     }
