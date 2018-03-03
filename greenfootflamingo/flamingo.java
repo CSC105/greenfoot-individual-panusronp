@@ -455,6 +455,7 @@ public void moveRight()
             MyWorld.addObject(score,600,413);
             MyWorld.addObject(gameover,600,300);
             MyWorld.removeObject(this);
+            //MyWorld.removeObject(Score.class);
         }
     }
 }
